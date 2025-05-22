@@ -5,7 +5,7 @@ from kafka import KafkaProducer
 
 # Konfigurasi Kafka Producer
 producer = KafkaProducer(
-    bootstrap_servers='LAPTOP-ACIN:9092', # Ganti localhost dengan LAPTOP-ACIN
+    bootstrap_servers='localhost:9092', # Ganti localhost dengan localhost
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
